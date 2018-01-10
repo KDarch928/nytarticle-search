@@ -26,7 +26,7 @@ $("").on("click", function (event) {
 
     var querySearch = createUrlSearch(url, apiKey, q, page, endDate, startDate);
     $.ajax({
-        url: url,
+        url: querySearch,
         method: 'GET',
     }).done(function(result) {
         console.log(result);
